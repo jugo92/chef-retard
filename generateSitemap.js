@@ -6,6 +6,7 @@ const sitemap = new SitemapStream({ hostname: "https://chef-retard.live" });
 const pages = [
   { url: "/", changefreq: "daily", priority: 1.0 },
   { url: "/excuses", changefreq: "weekly", priority: 0.8 },
+  { url: "/minimiser-retard", changefreq: "weekly", priority: 0.8 },
   // Ajoutez d'autres pages si nécessaire
 ];
 
