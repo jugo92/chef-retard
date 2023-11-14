@@ -1,34 +1,69 @@
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+import Head from "next/head";
 
 const ExcusesPage = () => {
-  const excuses = [
-    "Désolé chef, j'ai perdu la notion du temps en préparant un repas gastronomique.",
-    "Mon réveil a décidé de prendre une journée de congé, comme moi chef ^^.",
-    "Un embouteillage de chats sur le chemin du travail, ça existe, je l'ai vu chef.",
-    "J'ai été retenu en otage par une série passionnante sur Netflix chef.",
-    "Ma licorne de compagnie a mangé mes clés de voiture chef. Vraiment c'est pour cela que je suis en retard.",
-  ];
-
   return (
-    <main
-      className={`flex flex-col items-center justify-center h-screen p-24 ${inter.className}`}
-    >
-      <h1 className="text-4xl font-bold mb-4">Excuses Hilarantes</h1>
-      <p className="text-lg text-gray-600 mb-8">
-        Parfois, la vie nous donne des scénarios dignes d'un film comique. Voici
-        quelques excuses hilarantes que vous pouvez utiliser pour justifier vos
-        retards au travail à votre chef.
-      </p>
-      <ul className="list-disc text-left max-w-md">
-        {excuses.map((excuse, index) => (
-          <li key={index} className="mb-2">
-            {excuse}
-          </li>
-        ))}
-      </ul>
-    </main>
+    <>
+      <Head>
+        <title>Excuses Convaincantes pour Retard - Chef Retard</title>
+        <meta
+          name="description"
+          content="Découvrez des excuses professionnelles convaincantes pour expliquer vos retards au travail. Astuces pour se faire pardonner par votre chef et maintenir de bonnes relations professionnelles."
+        />
+      </Head>
+
+      <main className="flex flex-col items-center justify-center h-screen p-8 mt-16">
+        <h1 className="text-4xl font-bold mb-8 text-center">
+          Excuses Convaincantes pour expliquer votre retard à votre chef
+        </h1>
+        <section className="max-w-lg mb-8">
+          <h2 className="text-2xl font-bold mb-2">1. Circulation Inattendue</h2>
+          <p>
+            "Je m'excuse pour le retard. Aujourd'hui, le trafic était
+            extrêmement dense en raison de travaux routiers imprévus. J'ai tout
+            essayé pour arriver à temps, mais la situation était hors de mon
+            contrôle."
+          </p>
+        </section>
+        <section className="max-w-lg mb-8">
+          <h2 className="text-2xl font-bold mb-2">
+            2. Problèmes de Transport Public
+          </h2>
+          <p>
+            "Mes excuses pour le retard. Ce matin, le service de transports en
+            commun a été perturbé en raison d'une panne inattendue. J'ai attendu
+            patiemment les réparations, mais cela a malheureusement entraîné un
+            retard significatif dans mon trajet."
+          </p>
+        </section>
+        <section className="max-w-lg mb-8">
+          <h2 className="text-2xl font-bold mb-2">3. Urgence Familiale</h2>
+          <p>
+            "Je m'excuse sincèrement pour le retard. Une urgence familiale
+            inattendue est survenue ce matin, nécessitant mon attention
+            immédiate. J'ai géré la situation du mieux que j'ai pu, mais cela a
+            entraîné un retard imprévu dans mon arrivée au travail."
+          </p>
+        </section>
+        <section className="max-w-lg mb-8">
+          <h2 className="text-2xl font-bold mb-2">4. Problèmes Techniques</h2>
+          <p>
+            "Mes excuses pour le retard. En chemin, ma voiture a eu des
+            problèmes techniques soudains, ce qui m'a obligé à trouver une
+            solution de dépannage. J'ai pris des mesures immédiates pour
+            résoudre le problème, mais cela a entraîné un retard indépendant de
+            ma volonté."
+          </p>
+        </section>
+        <footer className="text-gray-600 text-sm mt-8 text-center">
+          Retrouvez plus d'excuses et de conseils sur Chef je suis encore en
+          retard. Nous sommes là pour vous aider à maintenir de bonnes relations
+          professionnelles malgré les retards occasionnels.
+        </footer>
+      </main>
+    </>
   );
 };
 
