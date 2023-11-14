@@ -1,14 +1,13 @@
-// components/Navbar.js
-
+// Navbar.js
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="navbar">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <div className="text-white text-xl font-bold">
-            Chef je suis encore en retard
+          <div className="text-white text-2xl font-bold">
+            <Link href="/">Chef je suis encore en retard</Link>
           </div>
           <ul className="flex space-x-4">
             <li>

@@ -14,8 +14,8 @@ const ExcusesPage = () => {
         />
       </Head>
 
-      <main className="flex flex-col items-center justify-center h-screen p-8 mt-16">
-        <h1 className="text-4xl font-bold mb-8 text-center">
+      <main className="flex flex-col items-center justify-center h-screen p-8 mt-16 relative">
+        <h1 className="excuses-title text-4xl font-bold mb-8 text-center">
           Excuses Convaincantes pour expliquer votre retard à votre chef
         </h1>
         <section className="max-w-lg mb-8">

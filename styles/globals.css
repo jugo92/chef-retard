@@ -56,3 +56,19 @@ footer {
 li{
   color: white;
 }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #20037f; 
+  z-index: 1000; 
+}
+
+.content {
+  margin-top: 100px; 
+  padding-top: 50px; 
+}
+.navbar {
+  padding: 1rem; 
+}
