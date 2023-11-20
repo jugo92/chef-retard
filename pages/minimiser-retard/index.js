@@ -73,7 +73,7 @@ const MinimiserRetardsPage = () => {
               <h2 className="text-2xl font-bold mb-2">
                 Prioriser les Tâches Importantes
               </h2>
-              <Link href="/minimiser-retard/prevoir-marge-securite" className="text-center">
+              <Link href="/minimiser-retard/prioriser-taches-importantes" className="text-center">
               <ImageSVG
                 src={"/home.svg"}
                 alt="Chef Retard"
