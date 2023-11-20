@@ -8,10 +8,11 @@ export default function App({ Component, pageProps }) {
   </Head>;
   return (
     <>
-      <main className="content">
-        <Navbar />
-        <Component {...pageProps} />
-      </main>
+      <main>
+  <Navbar />
+    <Component {...pageProps} />
+</main>
+
     </>
   );
 }
